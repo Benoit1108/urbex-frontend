@@ -66,7 +66,7 @@ export default {
         console.log(date);
         Cookies.set('token', response.token, { expires: date });
         console.log(tokenDecoded)
-       // this.$router.push('/');
+        this.$router.push('/');
       });
     }
   }

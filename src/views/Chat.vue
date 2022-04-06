@@ -1,6 +1,5 @@
 <template>
-  <body class="bg-gray-800">
-  <div class="flex flex-1 overflow-hidden h-screen max-w-screen-2xl m-auto">
+  <div class="flex flex-1 overflow-hidden bg-gray-800 h-full m-auto">
     <div class="p-12 lg:p-20 w-full">
       <div class="max-h-full h-full flex flex-row">
         <!-- LEFT SIDEBAR START -->
@@ -104,5 +103,4 @@
       </div>
     </div>
   </div>
-  </body>
 </template>

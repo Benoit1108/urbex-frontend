@@ -1,5 +1,4 @@
 <template>
-  <router-view>
-
+  <router-view class="h-[90%]">
   </router-view>
 </template>

@@ -1,10 +1,16 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
+  <div id="nav" class="h-[10%]">
+    <router-link to="/">Home</router-link>
+    |
     <router-link to="/about">About</router-link>
+    |
     <router-link to="/login">Login</router-link>
+    |
     <router-link to="/map">Map</router-link>
+    |
     <router-link to="/chat">Chat</router-link>
+    |
+    <button @click="logout">logout</button>
   </div>
   <router-view/>
 </template>
@@ -31,7 +37,15 @@
   color: #42b983;
 }
 </style>
-<script>export default {
-  components: {}
+<script>
+import jsCookie from 'js-cookie';
+export default {
+  components: {},
+  methods: {
+    logout() {
+      jsCookie.remove('token');
+      this.$router.push('/login');
+    }
+  }
 }
 </script>

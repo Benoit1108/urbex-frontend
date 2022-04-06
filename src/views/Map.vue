@@ -1,5 +1,5 @@
 <template>
-  <div id="map" class="h-screen"></div>
+  <div id="map" class="w-full"></div>
 </template>
 
 <script>
