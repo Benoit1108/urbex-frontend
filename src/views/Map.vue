@@ -1,5 +1,14 @@
 <template>
-  <div id="map" class="w-full"></div>
+  <div class="flex space-x-2">
+    <div class="w-3/12 h-full my-5 ml-36 mr-2  bg-white rounded-lg">
+      <div class="flex items-center justify-around my-5">
+        <h1 class="font-semibold text-xl">Vos lieux enregistrés</h1>
+        <button class="rounded h-8 w-36 bg-indigo-800 text-white">Ajouter un lieu</button>
+      </div>
+    </div>
+    <div id="map" class="w-9/12 my-5 rounded-lg relative flex">
+    </div>
+  </div>
 </template>
 
 <script>
