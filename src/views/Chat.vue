@@ -5,11 +5,18 @@
         <!-- LEFT SIDEBAR START -->
         <aside class="w-full lg:w-2/6 bg-gray-900 rounded-lg mr-5">
           <div class="max-w-full h-full w-full flex flex-col">
-            <div class="flex p-10 justify-between">
-              <div class="text-4xl font-semibold text-white">
-                Chat
+            <div class="flex p-10 justify-between items-center">
+              <div class="text-2xl font-semibold text-white">
+                Discussions
               </div>
-
+              <div class="text-white">
+                <f-icon name="edit"/>
+              </div>
+            </div>
+            <div>
+              <input id="search" class="rounded-md w-5/6 mb-4 px-3 py-2 border border-white  text-gray-900 rounded-t-md sm:text-sm" name="search"
+                     placeholder="Recherche une conversation"
+                     type="text"/>
             </div>
             <!-- USER SECTION START -->
             <div class="flex-1 overflow-y-scroll scrollbar-width scrollbar-thumb-color">
@@ -77,11 +84,13 @@
           <div class="flex-none p-5">
             <div>
               <div class="relative flex">
-                <!--                <span class="absolute inset-y-0 flex-items-center">-->
-                <!--                  <button type="button" class="inline-flex items-center justify-center rounded-full h-12 w-12 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-300 focus:outline-none">-->
-                <!--                    text-->
-                <!--                  </button>-->
-                <!--                </span>-->
+                <span class="absolute inset-y-0 flex-items-center">
+                  <button
+                      class="inline-flex items-center justify-center rounded-full h-12 w-12 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-300 focus:outline-none"
+                      type="button">
+                    <f-icon name="image"/>
+                  </button>
+                </span>
                 <input class="w-full focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-400 pl-12 bg-gray-800 rounded-full py-3 pr-5"
                        placeholder="Type here ..."
                        type="text"/>
