@@ -1,7 +1,16 @@
 <template>
-  <router-link class="flex gap-2" :to="to"  v-slot="{ isExactActive  }">
-    <f-icon :class="isExactActive ? 'text-sky-900' : ''" :name="icon" :size="size" />
-    <span class="md:block hidden"  :class="isExactActive ? 'text-sky-900' : ''">{{name}}</span>
+  <router-link class="flex" :to="to" v-slot="{ isExactActive }">
+    <f-icon
+      class="mr-2"
+      :class="isExactActive ? 'text-sky-900' : ''"
+      :name="icon"
+      :size="size"
+    />
+    <span
+      class="md:block hidden"
+      :class="isExactActive ? 'text-sky-900' : ''"
+      >{{ name }}</span
+    >
   </router-link>
 </template>
 
@@ -11,21 +20,21 @@ export default {
     size: {
       type: Number,
       required: false,
-      default: 24
+      default: 24,
     },
     name: {
       type: String,
-      required: true
+      required: true,
     },
     to: {
       type: String,
       required: false,
-      default: ''
+      default: "",
     },
     icon: {
-      type :String,
+      type: String,
       required: true,
     },
-  }
-}
+  },
+};
 </script>

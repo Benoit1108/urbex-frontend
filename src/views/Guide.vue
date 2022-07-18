@@ -4,38 +4,30 @@
       <UserInfo class="hidden xl:block" />
     </template>
     <template #center>
-      <Carousel />
-      <Tab class="px-2 py-6 sm:px-0">
+      <TabGuide class="px-2 py-6 sm:px-0">
         <TabPanel>
-          <Post />
+          <CardGuide />
         </TabPanel>
-      </Tab>
-    </template>
-    <template #right>
-      <Suggestion class="hidden xl:block" />
+      </TabGuide>
     </template>
   </Layout>
 </template>
 
 <script>
-import Tab from "@/components/home/Tab.vue";
+import TabGuide from "@/components/guide/TabGuide.vue";
 import { TabPanel } from "@headlessui/vue";
-import Carousel from "@/components/home/Carousel.vue";
-import Post from "@/components/home/post/Post.vue";
-import Suggestion from "@/components/home/post/Suggestion.vue";
 import UserInfo from "@/components/home/post/UserInfo.vue";
 import Layout from "@/components/Layout.vue";
+import CardGuide from "@/components/guide/CardGuide.vue";
 
 export default {
   name: "Home",
   components: {
-    Tab,
-    Carousel,
-    Post,
-    Suggestion,
+    TabGuide,
     UserInfo,
     TabPanel,
     Layout,
+    CardGuide,
   },
 };
 </script>

@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import Feather from 'feather-icons';
+import Feather from "feather-icons";
 export default {
   inheritAttrs: false,
   props: {
-    size : {
+    size: {
       type: Number,
       required: false,
-      default: 24
+      default: 24,
     },
     name: {
       type: String,
@@ -19,7 +19,11 @@ export default {
   },
   computed: {
     iconSvg() {
-      return Feather.icons[this.name].toSvg({ class: this.$attrs.class, width: this.size, height: this.size });
+      return Feather.icons[this.name].toSvg({
+        class: this.$attrs.class,
+        width: this.size,
+        height: this.size,
+      });
     },
   },
 };
